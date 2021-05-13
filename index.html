@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web&amp;display=swap"
+      rel="stylesheet"
+   >
+    <title>Car Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="score-section">
+        <p>High Score: <span class="high-score"></span></p>
+        <p>Score: <span class="user-score">0</span></p>
+      </div>
+      <div class="main-menu">
+        <h1>Instructions</h1>
+        <p>&#8226; Avoid hitting obstacles</p>
+        <p> &#8226; Switch lanes using side arrow keys</p>
+        <p>&#8226; Pick bullets on road</p>
+        <p>&#8226; Fire bullets by pressing spacebar</p>
+        <p>&#8226; Speed increases after certain time intervals</p>
+
+        <h2>Press Enter to Start</h1>
+
+      </div>
+      <div class="available_Bullets">
+        <img src="image/bullets.png" alt="bullet" /> X
+        <span class="bullet-number"> 0</span>
+      </div>
+      <div class="game-over-container">
+          <h1>GAME OVER :( </h1>
+          <h2>Press "Enter" to RESTART</h2>
+      </div>
+
+      <canvas></canvas>
+    </div>
+
+    <script src="js/canvas.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/road.js"></script>
+    <script src="js/car.js"></script>
+    <script src="js/obstacles.js"></script>
+    <script src="js/bulletImp.js"></script>
+  </body>
+</html>
