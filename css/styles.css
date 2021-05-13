@@ -70,9 +70,14 @@ canvas{
     bottom: 2%;
     left: 75%;
     font-size: 40px;
+    background-color: rgb(243, 249, 250);
+}
+.bullet-number{
+    background-color: rgb(243, 249, 250);
 }
 .available_Bullets img{
     width: 20px;
+    
 }
 
 .game-over-container{
