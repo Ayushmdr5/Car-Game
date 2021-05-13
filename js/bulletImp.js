@@ -4,6 +4,7 @@ bulletImg.src = "image/bullets.png";
 
 const BULLET_WIDTH = 10
 const BULLET_HEIGHT = 30
+
 class Bullet {
   constructor(y) {
     this.y = y;
@@ -58,7 +59,7 @@ let toGenerateBullet = false
 
 const spawnBullet = () => {
     if(!isGameOver && isPlaying){
-        if(timer % 500 === 0) toGenerateBullet = true
+        if(timer % 600 === 0) toGenerateBullet = true
         if(toGenerateBullet){
             spawnBulletY += obstacleSpeed
             c.drawImage(bulletImg,spawnBulletX - 5, spawnBulletY, BULLET_WIDTH, BULLET_HEIGHT)
@@ -81,20 +82,10 @@ const spawnBullet = () => {
 
 }
 const updateBulletCount = () => {
-    // if(bulletArr.length == 1){
-    //     document.querySelector('.bullet-number').innerHTML = 1
-    // } else{
+
         document.querySelector('.bullet-number').innerHTML = Math.floor((bulletArr.length / 2) + 0.5) ;
-    // }
 }
 
-
-// const generateBullet = () => {
-//     if (score == 5){
-//         const bullet = new Bullet(CAR_POSITION_Y)
-//         bulletArr.push(bullet)
-//     }
-// }
 
 const bulletAnimate = () => {
   spawnBullet()
@@ -106,22 +97,3 @@ const bulletAnimate = () => {
 };
 
 bulletAnimate();
-
-
-// const generateBullet = () => {
-//     document.addEventListener('keydown', e => {
-//         if(e.code === "Space"){
-//             fired = true
-//             bullets--
-//         }
-//     })
-//     if(bullets != 0){
-//         let y = CAR_POSITION_Y-30;
-//         if(fired){
-//             y = y - 1
-//             // console.log('running')
-//             c.drawImage(bulletImg, lanePosition[currentPosition] + (CAR_WIDTH/2), y, 10, 30)
-//         }
-
-//     }
-// }

@@ -31,6 +31,7 @@
 .high-score, .user-score{
     background-color: rgb(205, 237, 243);
 }
+
 .main-menu{
     width: 600px;
     height: 500px;
@@ -61,7 +62,6 @@
 
 }
 canvas{
-    /* border: 1px solid black; */
     margin: 0 auto;
     background-color: rgb(243, 249, 250);
 }
@@ -74,9 +74,7 @@ canvas{
 .available_Bullets img{
     width: 20px;
 }
-.bullet-number{
-    /* font-size: 90px; */
-}
+
 .game-over-container{
     display: none;
     position: absolute;
